@@ -1,5 +1,10 @@
-region        = "ap-south-1"
-ami           = "ami-0da59f1af71ea4ad2"
-instance_type = "t2.micro"
-key_name      = "key-tf"
-ports         = [22, 443, 80, 3306, 27017]
+region              = "ap-south-1"
+ami                 = "ami-0da59f1af71ea4ad2"
+instance_type       = "t2.micro"
+key_name            = "key-tf"
+ports               = [22, 443, 80, 3306, 27017]
+image_name          = "al2023-ami-*"
+owners              = "137112412989"
+root-device-type    = "ebs"
+virtualization-type = "hvm"
+instance_name       = "tf-example"

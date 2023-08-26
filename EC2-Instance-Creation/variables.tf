@@ -24,3 +24,28 @@ variable "ports" {
   description = "List of ports to allow"
   type        = list(number)
 }
+
+variable "image_name" {
+  description = "image name to select"
+  type        = string
+}
+
+variable "owners" {
+  description = "owner of the image name- ami"
+  type        = number
+}
+
+variable "root-device-type" {
+  description = "root-device-type of the image- ami"
+  type        = string
+}
+
+variable "virtualization-type" {
+  description = "virtualization-type of the image - ami"
+  type        = string
+}
+
+variable "instance_name" {
+  description = "Tag name of the Ec2 instance"
+  type        = string
+}
